@@ -5,7 +5,7 @@
 function newblog () {
     return (
         <main>
-            <h1>Maak een nieuwe blog</h1>
+            <h1>Nieuwe blog maken</h1>
         </main>
     )
 }

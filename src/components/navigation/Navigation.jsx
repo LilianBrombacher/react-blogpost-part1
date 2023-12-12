@@ -27,7 +27,7 @@ function Navigation() {
                         <NavLink
                             className={({ isActive }) => isActive ? 'active-menu-link': 'default-menu-link'}
                             to="/newblog">
-                            Maak een nieuwe blog
+                            Nieuwe blog maken
                         </NavLink>
                     </li>
                 </ul>
