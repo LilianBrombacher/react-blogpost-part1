@@ -1,11 +1,15 @@
 import './App.css'
 import logo from './assets/logo-white.png'
+import posts from './constants/data.json'
 import Home from './pages/home/Home.jsx'
-import Blogs from './pages/blogs/Blogs.jsx'
-import Newblog from './pages/newblog/Newblog.jsx'
+import AllePosts from './pages/posts/AllePosts.jsx'
 import Navigation from './components/navigation/Navigation.jsx'
 import Errorpage from './pages/errorpage/errorpage.jsx'
 import { Routes, Route } from 'react-router-dom'
+import BlogPostDetail from "./pages/posts/BlogPostDetail.jsx";
+import NieuwePost from "./pages/newblog/NieuwePost.jsx";
+
+
 
 function App() {
     return (
@@ -13,9 +17,10 @@ function App() {
             <Navigation />
             <Routes>
                 <Route path='/' element={<Home />}/>
-                <Route path='/blogs' element={<Blogs />}/>
-                <Route path='/newblog' element={<Newblog />}/>
+                <Route path='/alleposts' element={<AllePosts />}/>
+                <Route path='/nieuwePost' element={<NieuwePost />}/>
                 <Route path='*' element={<Errorpage />}/>
+                <Route path= '/alleposts/:postId' element={<BlogPostDetail />} />
             </Routes>
 
         {/*<div className="page-container">*/}

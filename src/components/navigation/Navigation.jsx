@@ -2,6 +2,7 @@ import React from 'react';
 import './Navigation.css';
 import { NavLink } from "react-router-dom";
 
+
 function Navigation() {
     return (
         <nav>
@@ -19,15 +20,15 @@ function Navigation() {
                     <li>
                         <NavLink
                             className={({ isActive }) => isActive ? 'active-menu-link': 'default-menu-link'}
-                            to="/blogs">
-                            Alle blogs
+                            to="/alleposts">
+                            Alle posts
                         </NavLink>
                     </li>
                     <li>
                         <NavLink
                             className={({ isActive }) => isActive ? 'active-menu-link': 'default-menu-link'}
-                            to="/newblog">
-                            Nieuwe blog maken
+                            to="/nieuwePost">
+                            Nieuwe post maken
                         </NavLink>
                     </li>
                 </ul>
