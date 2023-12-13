@@ -1,16 +1,18 @@
 import posts from '../../constants/data.json';
 import './AllePosts.css'
+import { Link } from 'react-router-dom'
 
 function AllePosts () {
+    const totalPosts= posts.length
     console.log(posts)
     return (
         <>
         <main className='outer-container'>
-            <h1>Alle posts</h1>
+            <h1>{totalPosts} posts</h1>
             <ul className='posts'>
-                {posts.map((post) => (
-                    <li className='posts-short' key={post.id}>
-                        <p>{post.title} ({post.author})</p>
+                {posts.map((post, index) => (
+                    <li className='posts-short' key={index}>
+                        <p> <Link to='/alleposts/:postId'> {post.title} ({post.author})</Link></p>
                         <p>{post.comments} reacties  -  {post.shares} keer gedeeld</p>
                     </li>
                 ))}
