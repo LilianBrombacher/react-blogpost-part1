@@ -8,11 +8,11 @@ function AllePosts () {
     return (
         <>
         <main className='outer-container'>
-            <h1>{totalPosts} posts</h1>
+            <h1>Bekijk alle {totalPosts} posts op het platform</h1>
             <ul className='posts'>
                 {posts.map((post, index) => (
                     <li className='posts-short' key={index}>
-                        <p> <Link to='/alleposts/:postId'> {post.title} ({post.author})</Link></p>
+                        <p> <Link className='post-link' to={`/alleposts/${post.id}`}> {post.title}</Link> ({post.author})</p>
                         <p>{post.comments} reacties  -  {post.shares} keer gedeeld</p>
                     </li>
                 ))}

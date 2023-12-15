@@ -8,19 +8,22 @@
 
 nav {
     width: 100%;
-    background-color: #3624ff;
+    background-color: #00AFB9;
     display: flex;
     justify-content: center;
     height: 60px;
 }
 
-nav a,
+nav a{
+    color: black;
+}
 nav a:visited {
-    text-decoration: none;
+    /*text-decoration: none;*/
+
 }
 
 nav a:hover {
-    color: white;
+    /*color: white;*/
 }
 
 ul {
@@ -31,9 +34,11 @@ ul {
     align-items: center;
 }
 .active-menu-link {
-    border-bottom: 1px solid whitesmoke;
+    color: #B56576;
+    text-decoration: none;
 }
 
 .default-menu-link {
     border-bottom: none;
+    text-decoration: none;
 }
