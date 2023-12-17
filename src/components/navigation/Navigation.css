@@ -8,14 +8,14 @@
 
 nav {
     width: 100%;
-    background-color: #00AFB9;
+    background-color: #2C2F39;
     display: flex;
     justify-content: center;
     height: 60px;
 }
 
 nav a{
-    color: black;
+    color: whitesmoke;
 }
 nav a:visited {
     /*text-decoration: none;*/
@@ -41,4 +41,8 @@ ul {
 .default-menu-link {
     border-bottom: none;
     text-decoration: none;
+}
+
+.nav-logo {
+    width: 150px;
 }

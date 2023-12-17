@@ -21,6 +21,7 @@ function App() {
                 <Route path='/nieuwePost' element={<NieuwePost />}/>
                 <Route path='*' element={<Errorpage />}/>
                 <Route path= '/alleposts/:postId' element={<BlogPostDetail />} />
+                <Route path= '/alleposts/:postId' element={<AllePosts />} />
             </Routes>
 
         {/*<div className="page-container">*/}

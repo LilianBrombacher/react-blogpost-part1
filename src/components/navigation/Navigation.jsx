@@ -1,13 +1,14 @@
 import React from 'react';
 import './Navigation.css';
 import { NavLink } from "react-router-dom";
+import logo from "../../assets/logo-medium.png";
 
 
 function Navigation() {
     return (
         <nav>
             <div className="nav-container">
-                <h4>Blogventure</h4>
+                <h4><img className='nav-logo' src={logo} alt="logo medium"/></h4>
 
                 <ul>
                     <li>
