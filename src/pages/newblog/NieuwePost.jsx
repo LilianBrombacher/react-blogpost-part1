@@ -31,15 +31,15 @@ function nieuwePost () {
             readTime: calculateReadTime(formState.content),
         });
 
-        console.log('De blog is succesvol verzameld! 🌈');
+        console.log('De blog is succesvol verzameld!');
         // navigate('/posts');
     }
 
 
 
     return (
-        <main>
-
+        <section className="new-post-section outer-content-container">
+            <div className="inner-content-container__text-restriction">
             <form className="new-post-form" onSubmit={handleSubmit}>
                 <h1>Post toevoegen</h1>
                 <label htmlFor="post-title">Titel</label>
@@ -84,7 +84,8 @@ function nieuwePost () {
                     Toevoegen
                 </button>
             </form>
-        </main>
+            </div>
+        </section>
     )
 }
 
