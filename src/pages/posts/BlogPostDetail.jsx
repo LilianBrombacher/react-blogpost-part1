@@ -41,7 +41,7 @@ function blogPostDetail() {
             <p>Geschreven door {author} op {formatDateString(created)}</p>
             <p>{readTime} minuten lezen</p>
             <p>{content}</p>
-            <p>{comments} reacties {shares} - keer gedeeld</p>
+            <p>{comments} reacties - {shares} keer gedeeld</p>
             <p> <Link className='to-all-posts' to='/alleposts'>Terug naar de overzichtspagina</Link> </p>
 
         </div>
