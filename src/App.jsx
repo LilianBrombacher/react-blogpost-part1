@@ -1,13 +1,12 @@
 import './App.css'
-import logo from './assets/logo-white.png'
-import posts from './constants/data.json'
+import {Route, Routes, useNavigate} from 'react-router-dom';
+import logoMedium from './assets/logo-medium.png'
 import Home from './pages/home/Home.jsx'
 import AllePosts from './pages/posts/AllePosts.jsx'
-import Navigation from './components/navigation/Navigation.jsx'
 import Errorpage from './pages/errorpage/errorpage.jsx'
-import { Routes, Route } from 'react-router-dom'
 import BlogPostDetail from "./pages/posts/BlogPostDetail.jsx";
 import NieuwePost from "./pages/newblog/NieuwePost.jsx";
+import Navigation from "./components/navigation/Navigation.jsx";
 
 
 

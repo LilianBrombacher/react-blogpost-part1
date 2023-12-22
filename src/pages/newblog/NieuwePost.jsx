@@ -1,4 +1,4 @@
-import NieuwePost from './NieuwePost.css'
+import './NieuwePost.css'
 import {useState} from "react";
 import {useNavigate} from "react-router-dom";
 import calculateReadTime from "../../helpers/calculateReadTime.js";
@@ -32,7 +32,7 @@ function nieuwePost () {
         });
 
         console.log('De blog is succesvol verzameld!');
-        // navigate('/posts');
+        navigate('/posts');
     }
 
 

@@ -7,7 +7,7 @@ import formatDateString from "../../helpers/FormatDateString.jsx";
 
 function blogPostDetail() {
     const {postId} = useParams();
-    const [postData, setPostData] = useState(null);
+    // const [postData, setPostData] = useState(null);
 
     // useEffect(() => {
     //     const fetchData = async () => {
