@@ -61,7 +61,7 @@ brengen! Maak zelf 4 pagina-componenten aan met een passende routing-structuur:
 
 * Home pagina
 * Nieuwe post pagina (om een nieuwe blog te starten)
-* Overzichtspagina (om alle blogs te bekijken)
+* Overzichtspagina (om alle posts te bekijken)
 * Een 404-pagina (om foute url's af te vangen)
 
 Uiteraard test je goed of alles werkt, door handmatig de url in de adresbalk te veranderen. _Tip:_ zet ook direct de
@@ -104,7 +104,7 @@ lukt het niet met importeren? Spiek dan even onderaan de opdrachtbeschrijving.
 ### 2.1 Overzichtspagina
 
 Deze pagina moet de totale hoeveelheid posts op het platform weergeven (een nummeriek getal) en een lijst van alle
-blogs. Deze geef je weer in het volgende format:
+posts. Deze geef je weer in het volgende format:
 
 ```
 De Smaken van Italië (Anna de Kok)
